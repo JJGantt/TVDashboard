@@ -1,0 +1,8 @@
+// Copy this file to Config.xcconfig and fill in your values.
+// Config.xcconfig is gitignored — never commit it.
+
+// Local network IP and port of the Pi TV dashboard server
+PI_LOCAL_HOST = 192.168.1.x:8766
+
+// Tailscale IP and port (used as fallback when off local network)
+PI_TAILSCALE_HOST = 100.x.x.x:8766

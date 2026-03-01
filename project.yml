@@ -1,0 +1,51 @@
+name: PiDashboard
+options:
+  bundleIdPrefix: com.jaredgantt
+  deploymentTarget:
+    tvOS: "17.0"
+  xcodeVersion: "16.0"
+
+configFiles:
+  Debug: Config.xcconfig
+  Release: Config.xcconfig
+
+settings:
+  base:
+    DEVELOPMENT_TEAM: XMH4AVFC78
+
+targets:
+  PiDashboard:
+    type: application
+    platform: tvOS
+    sources:
+      - path: PiDashboard
+      - path: Shared
+    settings:
+      base:
+        INFOPLIST_FILE: PiDashboard/Info.plist
+        CODE_SIGN_ENTITLEMENTS: PiDashboard/PiDashboard.entitlements
+        PRODUCT_BUNDLE_IDENTIFIER: com.jaredgantt.pidashboard
+    scheme:
+      testTargets: []
+    dependencies:
+      - target: TopShelfExtension
+    postCompileScripts: []
+
+  TopShelfExtension:
+    type: com.apple.product-type.tv-app-extension
+    platform: tvOS
+    sources:
+      - path: TopShelfExtension
+        includes:
+          - "*.swift"
+      - path: Shared
+      - path: TopShelfExtension/placeholder.png
+        buildPhase: resources
+    settings:
+      base:
+        INFOPLIST_FILE: TopShelfExtension/Info.plist
+        CODE_SIGN_ENTITLEMENTS: TopShelfExtension/TopShelfExtension.entitlements
+        PRODUCT_BUNDLE_IDENTIFIER: com.jaredgantt.pidashboard.topshelf
+        LD_RUNPATH_SEARCH_PATHS: "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks"
+    dependencies:
+      - sdk: TVServices.framework

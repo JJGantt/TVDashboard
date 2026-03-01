@@ -1,0 +1,11 @@
+# Config (contains private IPs — never commit)
+Config.xcconfig
+
+# Xcode build artifacts
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+
+# macOS
+.DS_Store
