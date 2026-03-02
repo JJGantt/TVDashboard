@@ -14,4 +14,9 @@ enum PiConstants {
     static let dashboardCacheKey = "cachedDashboard"
     static let refreshInterval: TimeInterval = 60
     static let requestTimeout: TimeInterval = 10
+
+    // Coding mode endpoints
+    static let codingMessagePath = "/tv/coding/message"
+    static let codingSessionsPath = "/tv/coding/sessions"
+    static let codingClearPath = "/tv/coding/clear"
 }

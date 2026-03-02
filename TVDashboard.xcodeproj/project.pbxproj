@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06383A024FA1DD0CDD817EBD /* CodingModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668A0AA839499A88F97C34FE /* CodingModeView.swift */; };
+		132EF98216FD377FCBF8BBC6 /* CodingSessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C630A3287AFEB606A6FA1EB /* CodingSessionStore.swift */; };
 		17DB5FBE12D8F4E072767308 /* TVServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E39769DA604B504D92A064C /* TVServices.framework */; };
+		1FF39F03E7EC9853307957D5 /* TerminalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62EA59E264FB1A47285D7A3 /* TerminalView.swift */; };
 		2DCDA6C2D42178B1B602854E /* DashboardStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7CD1332515248022EFA705 /* DashboardStore.swift */; };
+		32392FF457B6247510157C25 /* CodingModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3EE7D21B6D80189701BE8C /* CodingModels.swift */; };
 		37489F245AE0E7C18B91766F /* SharedCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E930EBFF3C023F0B49C174D /* SharedCache.swift */; };
 		44FC00BC466928F4F485C54F /* SharedModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CC6F23815136BC121B8FF5 /* SharedModels.swift */; };
 		55FD42A6BCF75D2F8F8B6266 /* SharedCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E930EBFF3C023F0B49C174D /* SharedCache.swift */; };
+		563DC66ACC8B54379E8D40AB /* CodingStatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D7EF02AEAB92D2583DA958 /* CodingStatusBar.swift */; };
 		776EF21ADFCEFD34AEA5B0E5 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1543EC3D532E255C3F2FAA80 /* SectionView.swift */; };
 		7D4D6A169DC10A055529B472 /* SharedModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CC6F23815136BC121B8FF5 /* SharedModels.swift */; };
+		870E88046943324C1AFBD1AD /* TerminalTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7599A1763F687DF46AF4B1F /* TerminalTabBar.swift */; };
 		8918DAB385F596A8CD561297 /* ContentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0CFC056D0F4C5ECC119D5F /* ContentProvider.swift */; };
+		8D100E9D565A33932E6F3C9D /* VoiceInputManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B584677230EA539B2CCA35 /* VoiceInputManager.swift */; };
 		98FC7691B0B1ED0511125692 /* SharedConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE688A23F0987BE9840108FF /* SharedConstants.swift */; };
 		A4C24748B95FF6D219262B3D /* SectionRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF29FEC81A081B1C2959443 /* SectionRegistry.swift */; };
 		A62D1CB9414C3728FB3F49AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9814A48DA3A6D3B2AB885F59 /* ContentView.swift */; };
@@ -52,21 +59,28 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		00B584677230EA539B2CCA35 /* VoiceInputManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceInputManager.swift; sourceTree = "<group>"; };
 		03BDE30D580DC9FFC1D1C606 /* PiDashboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PiDashboard.entitlements; sourceTree = "<group>"; };
 		0B7CD1332515248022EFA705 /* DashboardStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardStore.swift; sourceTree = "<group>"; };
 		1543EC3D532E255C3F2FAA80 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
+		2E78C8C10653DA166E03B5B1 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		2E930EBFF3C023F0B49C174D /* SharedCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedCache.swift; sourceTree = "<group>"; };
-		4BAC3FBEBFC096BBBB3121F8 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		56FFA0E980D7534AF1464AE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		665852C57B0A38C4030269C5 /* DashboardSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardSection.swift; sourceTree = "<group>"; };
+		668A0AA839499A88F97C34FE /* CodingModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingModeView.swift; sourceTree = "<group>"; };
 		6D93EEC785532D0FCE8E0882 /* TopShelfExtension.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = TopShelfExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		78DDB836444073FBA84D8FD1 /* StatusBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBanner.swift; sourceTree = "<group>"; };
+		88D7EF02AEAB92D2583DA958 /* CodingStatusBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingStatusBar.swift; sourceTree = "<group>"; };
 		89897407AEF0C15A48231C26 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
 		8A325D4E5D4CC1E628DBDEB9 /* PiDashboardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiDashboardApp.swift; sourceTree = "<group>"; };
 		8E39769DA604B504D92A064C /* TVServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TVServices.framework; path = System/Library/Frameworks/TVServices.framework; sourceTree = SDKROOT; };
 		961388898865CA4B40375BA2 /* PiAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiAPIClient.swift; sourceTree = "<group>"; };
 		9814A48DA3A6D3B2AB885F59 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9C630A3287AFEB606A6FA1EB /* CodingSessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingSessionStore.swift; sourceTree = "<group>"; };
+		A7599A1763F687DF46AF4B1F /* TerminalTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalTabBar.swift; sourceTree = "<group>"; };
+		AB3EE7D21B6D80189701BE8C /* CodingModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingModels.swift; sourceTree = "<group>"; };
 		AE0CFC056D0F4C5ECC119D5F /* ContentProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentProvider.swift; sourceTree = "<group>"; };
+		B62EA59E264FB1A47285D7A3 /* TerminalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalView.swift; sourceTree = "<group>"; };
 		BFF29FEC81A081B1C2959443 /* SectionRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionRegistry.swift; sourceTree = "<group>"; };
 		C5B2E8BB966E94D3D0C7AD71 /* TVDashboard.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = TVDashboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1CC6F23815136BC121B8FF5 /* SharedModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedModels.swift; sourceTree = "<group>"; };
@@ -95,15 +109,6 @@
 			path = Shared;
 			sourceTree = "<group>";
 		};
-		2C64CB62AA6F94523E88DE1A /* PiDashboard */ = {
-			isa = PBXGroup;
-			children = (
-				4BAC3FBEBFC096BBBB3121F8 /* Config.xcconfig */,
-			);
-			name = PiDashboard;
-			path = .;
-			sourceTree = "<group>";
-		};
 		75B2802C46EED71375A82F94 /* TopShelfExtension */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,8 +121,10 @@
 		832B55D074DC5D729A9AA32C /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				9C630A3287AFEB606A6FA1EB /* CodingSessionStore.swift */,
 				0B7CD1332515248022EFA705 /* DashboardStore.swift */,
 				961388898865CA4B40375BA2 /* PiAPIClient.swift */,
+				00B584677230EA539B2CCA35 /* VoiceInputManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -128,6 +135,15 @@
 				8A325D4E5D4CC1E628DBDEB9 /* PiDashboardApp.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		A37E37E5A4DB730444F2447C /* TVDashboard */ = {
+			isa = PBXGroup;
+			children = (
+				2E78C8C10653DA166E03B5B1 /* Config.xcconfig */,
+			);
+			name = TVDashboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		A57D843BD65F49F273BD0337 /* PiDashboard */ = {
@@ -143,9 +159,21 @@
 			path = PiDashboard;
 			sourceTree = "<group>";
 		};
+		C682BE9B2C96F4AE54B7BCEE /* CodingMode */ = {
+			isa = PBXGroup;
+			children = (
+				668A0AA839499A88F97C34FE /* CodingModeView.swift */,
+				88D7EF02AEAB92D2583DA958 /* CodingStatusBar.swift */,
+				A7599A1763F687DF46AF4B1F /* TerminalTabBar.swift */,
+				B62EA59E264FB1A47285D7A3 /* TerminalView.swift */,
+			);
+			path = CodingMode;
+			sourceTree = "<group>";
+		};
 		DA0442CE761BE207AB707E6D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AB3EE7D21B6D80189701BE8C /* CodingModels.swift */,
 				665852C57B0A38C4030269C5 /* DashboardSection.swift */,
 				BFF29FEC81A081B1C2959443 /* SectionRegistry.swift */,
 			);
@@ -164,9 +192,9 @@
 			isa = PBXGroup;
 			children = (
 				A57D843BD65F49F273BD0337 /* PiDashboard */,
-				2C64CB62AA6F94523E88DE1A /* PiDashboard */,
 				27323245CD556730AE8842D5 /* Shared */,
 				75B2802C46EED71375A82F94 /* TopShelfExtension */,
+				A37E37E5A4DB730444F2447C /* TVDashboard */,
 				E712F075CC39E621A5B1D921 /* Frameworks */,
 				F23F8981A540D03D77CFDC29 /* Products */,
 			);
@@ -178,6 +206,7 @@
 				9814A48DA3A6D3B2AB885F59 /* ContentView.swift */,
 				1543EC3D532E255C3F2FAA80 /* SectionView.swift */,
 				78DDB836444073FBA84D8FD1 /* StatusBanner.swift */,
+				C682BE9B2C96F4AE54B7BCEE /* CodingMode */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -296,6 +325,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06383A024FA1DD0CDD817EBD /* CodingModeView.swift in Sources */,
+				32392FF457B6247510157C25 /* CodingModels.swift in Sources */,
+				132EF98216FD377FCBF8BBC6 /* CodingSessionStore.swift in Sources */,
+				563DC66ACC8B54379E8D40AB /* CodingStatusBar.swift in Sources */,
 				A62D1CB9414C3728FB3F49AD /* ContentView.swift in Sources */,
 				D7E0E959E2B3DCCB7F0A3316 /* DashboardSection.swift in Sources */,
 				2DCDA6C2D42178B1B602854E /* DashboardStore.swift in Sources */,
@@ -307,6 +340,9 @@
 				98FC7691B0B1ED0511125692 /* SharedConstants.swift in Sources */,
 				44FC00BC466928F4F485C54F /* SharedModels.swift in Sources */,
 				CE1EFCAB05E140FA6A01B657 /* StatusBanner.swift in Sources */,
+				870E88046943324C1AFBD1AD /* TerminalTabBar.swift in Sources */,
+				1FF39F03E7EC9853307957D5 /* TerminalView.swift in Sources */,
+				8D100E9D565A33932E6F3C9D /* VoiceInputManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,7 +359,7 @@
 /* Begin XCBuildConfiguration section */
 		41ADEC91F042DD4222DF9DCC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4BAC3FBEBFC096BBBB3121F8 /* Config.xcconfig */;
+			baseConfigurationReference = 2E78C8C10653DA166E03B5B1 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -422,7 +458,7 @@
 		};
 		7944263AB3FD7814EAA62893 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4BAC3FBEBFC096BBBB3121F8 /* Config.xcconfig */;
+			baseConfigurationReference = 2E78C8C10653DA166E03B5B1 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
