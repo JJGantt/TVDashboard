@@ -26,15 +26,11 @@ struct CodingStatusBar: View {
                         .font(.system(.caption, design: .monospaced))
                         .foregroundStyle(.green)
                 }
-            } else {
-                Text("Play/Pause to send a message")
-                    .font(.system(.caption, design: .monospaced))
-                    .foregroundStyle(.secondary)
             }
 
             Spacer()
 
-            Text("T\(activeTerminal + 1)")
+            Text("Active: T\(activeTerminal + 1)")
                 .font(.system(.caption, design: .monospaced))
                 .foregroundStyle(.green)
         }

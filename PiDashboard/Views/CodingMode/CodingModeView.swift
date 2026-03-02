@@ -2,33 +2,12 @@ import SwiftUI
 
 struct CodingModeView: View {
     @StateObject private var store = CodingSessionStore()
-    @StateObject private var voice = VoiceInputManager()
-    @FocusState private var focusedArea: FocusArea?
-
-    private enum FocusArea: Hashable {
-        case terminal
-    }
+    @State private var inputText = ""
 
     var body: some View {
-        ZStack {
-            Color.black.ignoresSafeArea()
-
+        NavigationStack {
             VStack(spacing: 0) {
-                TerminalTabBar(
-                    activeIndex: $store.activeTerminal,
-                    terminals: store.terminals
-                )
-
-                TerminalView(
-                    session: store.terminals[store.activeTerminal],
-                    isFocused: focusedArea == .terminal
-                )
-                .frame(maxHeight: .infinity)
-                .focusable()
-                .focused($focusedArea, equals: .terminal)
-                .onPlayPauseCommand {
-                    voice.promptForInput()
-                }
+                TerminalPanesView(store: store)
 
                 CodingStatusBar(
                     isConnected: store.isConnected,
@@ -36,22 +15,25 @@ struct CodingModeView: View {
                     isStreaming: store.terminals[store.activeTerminal].isStreaming
                 )
             }
-        }
-        .onAppear {
-            focusedArea = .terminal
-        }
-        .alert("Send to Terminal \(store.activeTerminal + 1)", isPresented: $voice.showTextInput) {
-            TextField("Type or press mic to dictate", text: $voice.textInput)
-            Button("Send") {
-                let text = voice.textInput.trimmingCharacters(in: .whitespacesAndNewlines)
-                voice.textInput = ""
-                if !text.isEmpty {
-                    Task { await store.sendMessage(text) }
-                }
+            .background(Color.black)
+            .searchable(text: $inputText, prompt: "Tap mic to dictate...")
+            .onSubmit(of: .search) {
+                sendIfNonEmpty()
             }
-            Button("Cancel", role: .cancel) {
-                voice.textInput = ""
+            .onChange(of: inputText) { _, newValue in
+                let trimmed = newValue.trimmingCharacters(in: .whitespacesAndNewlines)
+                guard !trimmed.isEmpty else { return }
+                // Dictation dumps text all at once — auto-send
+                inputText = ""
+                Task { await store.sendMessage(trimmed) }
             }
         }
+    }
+
+    private func sendIfNonEmpty() {
+        let trimmed = inputText.trimmingCharacters(in: .whitespacesAndNewlines)
+        inputText = ""
+        guard !trimmed.isEmpty else { return }
+        Task { await store.sendMessage(trimmed) }
     }
 }
