@@ -15,8 +15,8 @@
 		37489F245AE0E7C18B91766F /* SharedCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E930EBFF3C023F0B49C174D /* SharedCache.swift */; };
 		44FC00BC466928F4F485C54F /* SharedModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CC6F23815136BC121B8FF5 /* SharedModels.swift */; };
 		4C29B1A35B214B814EF1E811 /* TerminalPanesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7787F010F204A69361FF2E /* TerminalPanesView.swift */; };
+		B2C3D4E5F6A7B8A1 /* SessionPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6A7B8 /* SessionPickerView.swift */; };
 		55FD42A6BCF75D2F8F8B6266 /* SharedCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E930EBFF3C023F0B49C174D /* SharedCache.swift */; };
-		563DC66ACC8B54379E8D40AB /* CodingStatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D7EF02AEAB92D2583DA958 /* CodingStatusBar.swift */; };
 		776EF21ADFCEFD34AEA5B0E5 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1543EC3D532E255C3F2FAA80 /* SectionView.swift */; };
 		7D4D6A169DC10A055529B472 /* SharedModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CC6F23815136BC121B8FF5 /* SharedModels.swift */; };
 		8918DAB385F596A8CD561297 /* ContentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0CFC056D0F4C5ECC119D5F /* ContentProvider.swift */; };
@@ -63,12 +63,12 @@
 		2E78C8C10653DA166E03B5B1 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		2E930EBFF3C023F0B49C174D /* SharedCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedCache.swift; sourceTree = "<group>"; };
 		4E7787F010F204A69361FF2E /* TerminalPanesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalPanesView.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F6A7B8 /* SessionPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionPickerView.swift; sourceTree = "<group>"; };
 		56FFA0E980D7534AF1464AE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		665852C57B0A38C4030269C5 /* DashboardSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardSection.swift; sourceTree = "<group>"; };
 		668A0AA839499A88F97C34FE /* CodingModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingModeView.swift; sourceTree = "<group>"; };
 		6D93EEC785532D0FCE8E0882 /* TopShelfExtension.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = TopShelfExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		78DDB836444073FBA84D8FD1 /* StatusBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBanner.swift; sourceTree = "<group>"; };
-		88D7EF02AEAB92D2583DA958 /* CodingStatusBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingStatusBar.swift; sourceTree = "<group>"; };
 		89897407AEF0C15A48231C26 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
 		8A325D4E5D4CC1E628DBDEB9 /* PiDashboardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiDashboardApp.swift; sourceTree = "<group>"; };
 		8E39769DA604B504D92A064C /* TVServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TVServices.framework; path = System/Library/Frameworks/TVServices.framework; sourceTree = SDKROOT; };
@@ -158,8 +158,8 @@
 			isa = PBXGroup;
 			children = (
 				668A0AA839499A88F97C34FE /* CodingModeView.swift */,
-				88D7EF02AEAB92D2583DA958 /* CodingStatusBar.swift */,
 				4E7787F010F204A69361FF2E /* TerminalPanesView.swift */,
+				A1B2C3D4E5F6A7B8 /* SessionPickerView.swift */,
 			);
 			path = CodingMode;
 			sourceTree = "<group>";
@@ -322,7 +322,6 @@
 				06383A024FA1DD0CDD817EBD /* CodingModeView.swift in Sources */,
 				32392FF457B6247510157C25 /* CodingModels.swift in Sources */,
 				132EF98216FD377FCBF8BBC6 /* CodingSessionStore.swift in Sources */,
-				563DC66ACC8B54379E8D40AB /* CodingStatusBar.swift in Sources */,
 				A62D1CB9414C3728FB3F49AD /* ContentView.swift in Sources */,
 				D7E0E959E2B3DCCB7F0A3316 /* DashboardSection.swift in Sources */,
 				2DCDA6C2D42178B1B602854E /* DashboardStore.swift in Sources */,
@@ -335,6 +334,7 @@
 				44FC00BC466928F4F485C54F /* SharedModels.swift in Sources */,
 				CE1EFCAB05E140FA6A01B657 /* StatusBanner.swift in Sources */,
 				4C29B1A35B214B814EF1E811 /* TerminalPanesView.swift in Sources */,
+				B2C3D4E5F6A7B8A1 /* SessionPickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

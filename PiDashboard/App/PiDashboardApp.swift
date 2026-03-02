@@ -8,22 +8,16 @@ struct PiDashboardApp: App {
 
     var body: some Scene {
         WindowGroup {
-            TabView {
-                ContentView(store: store, selectedSection: $selectedSection, selectedItem: $selectedItem)
-                    .tabItem { Label("Dashboard", systemImage: "square.grid.2x2") }
-                    .onAppear {
-                        store.startAutoRefresh()
-                    }
-                    .onDisappear {
-                        store.stopAutoRefresh()
-                    }
-
-                CodingModeView()
-                    .tabItem { Label("Code", systemImage: "terminal") }
-            }
-            .onOpenURL { url in
-                handleDeepLink(url)
-            }
+            ContentView(store: store, selectedSection: $selectedSection, selectedItem: $selectedItem)
+                .onAppear {
+                    store.startAutoRefresh()
+                }
+                .onDisappear {
+                    store.stopAutoRefresh()
+                }
+                .onOpenURL { url in
+                    handleDeepLink(url)
+                }
         }
     }
 

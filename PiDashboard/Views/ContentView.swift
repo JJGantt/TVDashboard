@@ -14,6 +14,11 @@ struct ContentView: View {
                     ForEach(store.sections) { section in
                         SectionView(section: section, selectedItem: $selectedItem)
                     }
+
+                    NavigationLink(destination: CodingModeView()) {
+                        Label("Code", systemImage: "terminal")
+                            .font(.headline)
+                    }
                 }
                 .padding(60)
             }
